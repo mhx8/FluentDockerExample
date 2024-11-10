@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductApi", "ProductApi\ProductApi.csproj", "{CC582111-02DD-43D2-98AD-402205E8498D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductApi.Tests", "ProductApi.Tests\ProductApi.Tests.csproj", "{F523A415-4E45-4C8F-AD29-7326628D5FCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{9EE77028-C915-455B-AB5C-CD92696E86C0}"
+	ProjectSection(SolutionItems) = preProject
+		database\create_database.sql = database\create_database.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tables", "Tables", "{3D89DAED-6EFC-4CAC-8DFD-6DC1A7179381}"
+	ProjectSection(SolutionItems) = preProject
+		database\Tables\dbo.Product.sql = database\Tables\dbo.Product.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{4502AD9D-C0D1-4600-855C-64D8220B5C6F}"
+	ProjectSection(SolutionItems) = preProject
+		database\Views\dbo.ProductView.sql = database\Views\dbo.ProductView.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datas", "Datas", "{39C5C8EA-350E-45FF-B6A8-27F57921A6F0}"
+	ProjectSection(SolutionItems) = preProject
+		database\Datas\dbo.Product_Data.sql = database\Datas\dbo.Product_Data.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{4556FE28-793B-4E9F-AC41-5EFAD2BE10EB}"
+	ProjectSection(SolutionItems) = preProject
+		wait-and-run.sh = wait-and-run.sh
+		DockerfileDatabase = DockerfileDatabase
+		docker-compose.yaml = docker-compose.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC582111-02DD-43D2-98AD-402205E8498D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC582111-02DD-43D2-98AD-402205E8498D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC582111-02DD-43D2-98AD-402205E8498D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC582111-02DD-43D2-98AD-402205E8498D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F523A415-4E45-4C8F-AD29-7326628D5FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F523A415-4E45-4C8F-AD29-7326628D5FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F523A415-4E45-4C8F-AD29-7326628D5FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F523A415-4E45-4C8F-AD29-7326628D5FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3D89DAED-6EFC-4CAC-8DFD-6DC1A7179381} = {9EE77028-C915-455B-AB5C-CD92696E86C0}
+		{4502AD9D-C0D1-4600-855C-64D8220B5C6F} = {9EE77028-C915-455B-AB5C-CD92696E86C0}
+		{39C5C8EA-350E-45FF-B6A8-27F57921A6F0} = {9EE77028-C915-455B-AB5C-CD92696E86C0}
+	EndGlobalSection
+EndGlobal
